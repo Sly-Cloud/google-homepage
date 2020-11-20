@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    width: 100%;
+}
+ /* Let's specify the behaviour of all listed items */
+
+ ul {
+     list-style: none;
+ }
+
+ #navigation-bar {
+     text-align: right;
+ }
+
+ #navigation-bar li {
+     display: inline-block;
+     padding: 8px;
+ }
+
+ #navigation-bar #sign {
+     color: #fff;
+     font-weight: bold;
+     background: blue;
+     margin-right: 25px;
+     padding: 7px 15px;
+ }
+
+ #sign:hover {
+     box-shadow: 5px 5px 5px gray;
+ }
+
+.nav-links {
+    color: black;
+}
+
+#google_logo {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    padding-top: 95px;
+    padding-bottom: 20px;
+}
+
+.form {
+    text-align: center;
+    position: relative;
+    padding-bottom: 30px; 
+}
+
+.form .search-form {
+    padding: 12px 210px;
+    border: 1px solid gray;
+    border-radius: 30px;
+}
+
+#search-link {
+    text-align: center;
+    letter-spacing: 6px;
+}
+
+#search-link #google-search {
+    font-size: 14px;
+    color:rgb(110, 95, 95);
+    padding: 10px 12px 10px 12px;
+    border: none;
+    border-radius: 4px;
+}
+
+#search-link #lucky {
+    font-size: 14px;
+    color:rgb(110, 95, 95);
+    padding: 10px 12px 10px 12px;
+    border: none;
+    border-radius: 4px;
+}
+
+#google-search a:hover {
+    text-decoration: none;
+    box-shadow: 5px 5px 5px gray;
+}
+
+#lucky a:hover {
+    text-decoration: none;
+    box-shadow: 5px 5px 5px gray;
+}
+
+.languages {
+    font-size: 13px;
+    text-align: center;
+    margin-top: 23px;
+}
+
+.languages a{
+    color: blue;
+    white-space: 30px;
+    display: inline-block; /* I tried this and the next line for the spacing, but did not work */
+    word-spacing: 5px;
+}
+
+.footer .country {
+    text-align: left;
+    margin-top: 12px;
+    padding-top: 2px;
+    padding-left: 25px;
+}
+
+hr {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    height: 1px;
+    background-color:#666;
+    opacity: 0.5;
+}
+
+.footer  {
+    background: #f2f2f2;
+    border-top: solid 2px #e4e4e4;
+    bottom: 0;
+    margin-top: 120px;
+    padding-bottom: 60px;
+    width: 100%; 
+  }
+
+  
+.footer ul li {
+    display: inline;
+    color: #666666;
+    font-size: 14px;
+    padding: 25px;
+  }
+  
+  footer ul {
+    float: left;
+    padding: 1px;
+  }
+  
+  footer ul a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-right {
+    float: right;
+  }
+
+@media screen and (max-width: 500px) {
+    /* For mobile phones: */
+    [class*="search-form"] {
+      width: 100%;
+    }
+}

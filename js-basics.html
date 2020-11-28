@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="eng">
+	<meta charset="UTF-8">
+	<meta name="content" width="device-width initial scale=1">
+	<head>
+		<title> Simple JS </title>
+		<script>
+			console.log(23+97);
+			console.log(1+2+3+4+5+6);
+			console.log((4 + 6 + 9) / 77);
+			let a = 10;
+			let b = 7 * a;
+			console.log(b);
+
+			const max = 57;
+			let actual = max - 13;
+			let percentage = actual/max;
+			console.log(percentage);
+
+
+			let myDate = '16' + '15';
+			console.log(typeof myDate);
+
+			let myNum = 123;
+			let mystring = myNum.toString();
+			console.log(mystring);
+
+			let examScore = 45;
+			let totalHighestScore = 70;
+			examResults = `You scored ${ examScore }/${ totalHighestScore } (${Math.round((examScore/totalHighestScore * 100)) }%). ${ examScore >=45 ? 'Well done! You passed' : 'Bad luck, you didn\'t pass this time'}`;
+			console.log(examResults);
+
+			function myFunction() {
+				var str = document.getElementById('demo').innerHTML;
+				var res = str.replace(/red|house|car/gi, function (x) {
+					return x.toUpperCase();
+				})
+
+				document.getElementById('demo').innerHTML = res;
+			}
+		</script>
+	</head>
+	<body>
+		<p id="demo"> Mr. Red has a red house and a red car </p>
+		<button onclick="myFunction()"> Click here </button>
+	</body>
+</html>
